@@ -9,28 +9,28 @@ const projects = [
     name: "Omoceb Venture",
     year: "Mar 2025",
     align: "right",
-    image: "public/images/website-img-1.jpg", // ✅ Correct public path
+    image: "/images/website-img-1.jpg", // ✅ Correct public path
     link: "https://braim-code.github.io/omoceb/",
   },
   {
     name: "BandHitz",
     year: "Sept 2025",
     align: "left",
-    image: "public/images/website-img-2.webp",
+    image: "/images/website-img-2.webp",
     link: "https://bandhit.onrender.com", // You can update this later with a real URL
   },
   {
     name: "Tia Medical",
     year: "Jan 2024",
     align: "right",
-    image: "public/images/website-img-3.jpg",
+    image: "/images/website-img-3.jpg",
     link: " https://braim-code.github.io/tia-med/",
   },
   {
     name: "Calculator",
     year: "May 2024",
     align: "left",
-    image: "public/images/website-img-4.jpg",
+    image: "/images/website-img-4.jpg",
     link: " https://braim-code.github.io/calculator/",
   },
 ];
