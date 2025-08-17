@@ -1,7 +1,14 @@
+// ProjectsMain.jsx
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+
+// ✅ Import images from src/assets/images
+import websiteImg1 from "../../assets/images/website-img-1.jpg";
+import websiteImg2 from "../../assets/images/website-img-2.webp";
+import websiteImg3 from "../../assets/images/website-img-3.jpg";
+import websiteImg4 from "../../assets/images/website-img-4.jpg";
 
 // Project list
 const projects = [
@@ -9,29 +16,29 @@ const projects = [
     name: "Omoceb Venture",
     year: "Mar 2025",
     align: "right",
-    image: "/images/website-img-1.jpg", // ✅ Correct public path
+    image: websiteImg1,
     link: "https://braim-code.github.io/omoceb/",
   },
   {
     name: "BandHitz",
     year: "Sept 2025",
     align: "left",
-    image: "/images/website-img-2.webp",
-    link: "https://bandhit.onrender.com", // You can update this later with a real URL
+    image: websiteImg2,
+    link: "https://bandhit.onrender.com",
   },
   {
     name: "Tia Medical",
     year: "Jan 2024",
     align: "right",
-    image: "/images/website-img-3.jpg",
-    link: " https://braim-code.github.io/tia-med/",
+    image: websiteImg3,
+    link: "https://braim-code.github.io/tia-med/",
   },
   {
     name: "Calculator",
     year: "May 2024",
     align: "left",
-    image: "/images/website-img-4.jpg",
-    link: " https://braim-code.github.io/calculator/",
+    image: websiteImg4,
+    link: "https://braim-code.github.io/calculator/",
   },
 ];
 
@@ -57,7 +64,7 @@ const ProjectsMain = () => {
             year={project.year}
             align={project.align}
             image={project.image}
-            link={project.link} // ✅ Passing link here
+            link={project.link}
           />
         ))}
       </div>
